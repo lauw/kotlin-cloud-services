@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="authentication-rest_main" target="1.8" />
+      <module name="authentication-rest_test" target="1.8" />
+      <module name="authentication-service_main" target="1.8" />
+      <module name="authentication-service_test" target="1.8" />
+      <module name="bedrijfsapp-api_main" target="1.8" />
+      <module name="bedrijfsapp-api_test" target="1.8" />
+      <module name="edge-rest_main" target="1.8" />
+      <module name="edge-rest_test" target="1.8" />
+      <module name="edge-service_main" target="1.8" />
+      <module name="edge-service_test" target="1.8" />
+      <module name="eureka-rest_main" target="1.8" />
+      <module name="eureka-rest_test" target="1.8" />
+      <module name="eureka-service_main" target="1.8" />
+      <module name="eureka-service_test" target="1.8" />
+      <module name="product-service_main" target="1.8" />
+      <module name="product-service_test" target="1.8" />
+      <module name="user-rest_main" target="1.8" />
+      <module name="user-rest_test" target="1.8" />
+      <module name="user-service_main" target="1.8" />
+      <module name="user-service_test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,15 @@
+*.DS_STORE
+*npm-debug.log
+.gradle
+build
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/modules.xml
+.idea/usage.statistics.xml
+.idea/libraries/
+out
+target/
+*.iml
+/.idea/vcs.xml
+.idea/gradle.xml
+

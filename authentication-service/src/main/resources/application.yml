@@ -1,0 +1,26 @@
+server:
+  address: 127.0.0.1
+  port: 9004
+
+spring:
+  application:
+    name: authentication-rest
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:10001/eureka/
+  instance:
+    prefer-ip-address: true
+    ip-address: 127.0.0.1
+
+token:
+  secret: 9SyECk96oDsTmXfogIieDI0cD/8FpnojlYSUJT5U9I/FGVmBz5oskmjOR8cbXTvoPjX+Pq/T/b1PqpHX0lYm0oCBjXWICA==
+
+security:
+  basic:
+    enabled: false
+
+management:
+  security:
+    enabled: false

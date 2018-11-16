@@ -1,0 +1,34 @@
+server:
+  address: 127.0.0.1
+  port: 9001
+
+spring:
+  application:
+    name: edge-rest
+
+
+# Define the routes which determine what URL are serviced by what applications.
+# The application/services are defined in the bootstrap.yml file of individual applications
+# using the spring.application.name property.
+
+# Note that we don't proxy the calls to the authorization server. The reason being that
+# Spring cloud security would need to secure the api gateway before it can route the
+# requests using zuul
+zuul:
+  routes:
+  # DO NOT route authentication-rest, because access should not be allowed to that rest from outside
+#      authentication-rest:
+#        path: /authentication/**
+#        serviceId: authentication-rest
+      user-service:
+        path: /user/**
+        serviceId: user-rest
+
+# Define the Eureka server that handles rest registration
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:10001/eureka/
+  instance:
+    prefer-ip-address: true
+    ip-address: 127.0.0.1

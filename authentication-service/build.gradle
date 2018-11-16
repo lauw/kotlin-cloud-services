@@ -1,0 +1,9 @@
+jar {
+	baseName = 'authentication-service'
+	version = '0.0.1-SNAPSHOT'
+}
+
+dependencies {
+	compile('org.springframework.boot:spring-boot-starter-security')
+	testCompile('org.springframework.boot:spring-boot-starter-test')
+}

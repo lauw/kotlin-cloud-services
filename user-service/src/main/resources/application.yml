@@ -1,0 +1,19 @@
+server:
+  address: 127.0.0.1
+  port: 9005
+
+spring:
+  application:
+    name: user-rest
+
+# Define the Eureka server that handles rest registration
+eureka:
+  instance:
+    prefer-ip-address: true
+    ip-address: 127.0.0.1
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:10001/eureka/
+
+token:
+  secret: 9SyECk96oDsTmXfogIieDI0cD/8FpnojlYSUJT5U9I/FGVmBz5oskmjOR8cbXTvoPjX+Pq/T/b1PqpHX0lYm0oCBjXWICA==
